@@ -15,20 +15,41 @@
 }
 
 .transition-circle {
-  @apply fixed top-0 left-0 w-screen h-screen bg-dark; /* Usar Tailwind para posiciones y dimensiones */
-  clip-path: circle(100%); /* Comienza como un círculo completo */
+  @apply fixed top-0 left-0 w-screen h-screen bg-dark; 
+  clip-path: circle(100%); 
   animation: circle-in-hesitate 5.0s cubic-bezier(.25, 1, .30, 1) both;
-  z-index: 10; /* Asegura que esté por encima de todo */
+  z-index: 10; 
 }
 
 .loaded {
-  animation: none; /* Detiene la animación cuando se carga */
+  animation: none; 
 }
 
 .fade-in {
-  @apply opacity-100 transition-opacity duration-500; /* Usar Tailwind para la transición de opacidad */
+  @apply opacity-100 transition-opacity duration-500;
 }
 
 .hidden {
-  @apply opacity-0; /* Usar Tailwind para ocultar el elemento */
+  @apply opacity-0; 
 }
+
+@layer utilities {
+  @keyframes waveEffect {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%; 
+    }
+  }
+
+  .wave-text {
+    background-size: 200% 200%;
+    animation: waveEffect 3s ease-in-out infinite;
+    animation-fill-mode: forwards; 
+  }
+}
+
