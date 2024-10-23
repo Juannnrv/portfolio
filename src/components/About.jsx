@@ -1,63 +1,186 @@
-import React from "react";
-import { motion } from "framer-motion";
-import aboutMeVideo from "../assets/aboutMe.mp4"; // Importa el video
+import { motion } from "framer-motion"
+import { Download } from "lucide-react"
+import aboutMeVideo from "../assets/aboutMe.mp4";
+import gengarFly from "../assets/gengar.gif";
+import gengarLaugh from "../assets/gengarLaughing.gif";
+import Section from "./Section";
 
-const AboutMe = () => {
+const staggerContainer = {
+  hidden: { opacity: 1 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+}
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 50 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+}
+
+const fadeInLeft = {
+  hidden: { opacity: 0, x: -50 },
+  show: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+}
+
+const fadeInRight = {
+  hidden: { opacity: 0, x: 50 },
+  show: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+}
+
+const rotateIn = {
+  hidden: { opacity: 0, rotate: -10 },
+  show: { opacity: 1, rotate: 0, transition: { duration: 0.5 } },
+}
+
+export default function Component() {
   return (
-    <div className="min-h-screen bg-green flex items-center justify-center p-4 relative overflow-hidden">
-      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="w-full md:w-2/3"
-        >
-          <div className="bg-dark rounded-lg p-6 font-mono text-sm">
-            <p className="text-peach mb-4">{"<p>"}</p>
-            <p className="text-peach mb-2 text-5xl">About me</p>
-            <p className="text-white mb-2">
-              My name is Juan and I specialize in web development that utilizes{" "}
-              <span className="text-peach">HTML</span>,{" "}
-              <span className="text-peach">CSS</span>,{" "}
-              <span className="text-peach">JS</span>, and{" "}
-              <span className="text-peach">REACT</span> etc.
-            </p>
-            <p className="text-white mb-2">
-              I am a highly motivated individual and eternal optimist dedicated
-              to writing clear, concise, robust code that works. Striving to
-              never stop learning and improving.
-            </p>
-            <p className="text-white mb-2">
-              When I'm not coding, I am writing blogs, reading, or picking up
-              some new hands-on art project like photography.
-            </p>
-            <p className="text-white">
-              I like to have my perspective and belief systems challenged so
-              that I see the world through new eyes.
-            </p>
-            <p className="text-peach mt-4">{"</p>"}</p>
-          </div>
-        </motion.div>
+    <Section className="min-h-screen bg-green p-4 md:p-8">
+      <motion.div
+        className="max-w-7xl mx-auto"
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {/* Video section */}
+          <motion.div
+            className="col-span-full sm:col-span-2 bg-peach rounded-xl overflow-hidden shadow-lg"
+            variants={fadeInUp}
+            whileHover={{ scale: 1.05 }}
+          >
+            <video
+              src={aboutMeVideo}
+              className="w-full h-full object-cover"
+              controls
+              autoPlay
+              loop
+              muted
+            />
+          </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-full md:w-full"
-        >
-          <video
-            src={aboutMeVideo}
-            className="rounded-lg shadow-lg"
-            controls
-            autoPlay
-            loop
-            muted
-            style={{ boxShadow: "0 10px 80px rgba(0, 0, 0, 0.5)" }} 
-          />
-        </motion.div>
-      </div>
-    </div>
-  );
-};
+          {/* Mission section */}
+          <motion.div
+            className="col-span-full sm:col-span-1 bg-black rounded-xl shadow-lg p-6"
+            variants={rotateIn}
+            whileHover={{ scale: 1.05 }}
+          >
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green mb-4">Mission</h3>
+            <p className="text-peach text-base md:text-lg lg:text-xl leading-relaxed">
+              To leverage technology, empathy, and innovation to create effective solutions that benefit our communities
+              and push the boundaries of what's possible in web development.
+            </p>
+          </motion.div>
 
-export default AboutMe;
+          {/* English level */}
+          <motion.div
+            className="col-span-full sm:col-span-1 bg-peach text-green font-bold rounded-xl shadow-lg flex flex-col items-center justify-center text-center p-4"
+            variants={fadeInRight}
+            whileHover={{ scale: 1.05 }}
+          >
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">ENGLISH LEVEL</h3>
+            <p className="text-5xl md:text-7xl lg:text-9xl font-bold">B2</p>
+          </motion.div>
+
+          {/* Download CV button */}
+          <motion.div
+            className="col-span-full sm:col-span-1 bg-black flex flex-col items-center justify-around rounded-xl shadow-lg p-6"
+            variants={rotateIn}
+            whileHover={{ scale: 1.05 }}
+          >
+            <img src={gengarLaugh} alt="Gengar laughing" className="w-[150px] h-[150px] rounded-full mb-4" />
+            <div className="bg-peach rounded-xl w-full">
+              <a
+                href="/path/to/your/cv.pdf"
+                download
+                className="w-full h-full text-lg flex items-center justify-center space-x-2 text-green p-4"
+              >
+                <Download className="mr-2 h-6 w-6" />
+                <span className="text-xl font-bold">Download CV</span>
+              </a>
+            </div>
+          </motion.div>
+
+          {/* About me section */}
+          <motion.div
+            className="col-span-full sm:col-span-2 bg-peach rounded-xl shadow-lg p-6"
+            variants={fadeInUp}
+            whileHover={{ scale: 1.05 }}
+          >
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green mb-4">About Me</h3>
+            <p className="text-black font-medium text-base md:text-xl lg:text-2xl leading-relaxed">
+              I'm Juan Rosas, a junior full-stack developer at Campuslands, passionate about creating scalable APIs and
+              intuitive interfaces. I thrive on solving complex challenges and making a tangible impact on users.
+            </p>
+          </motion.div>
+
+          {/* Image with Gengar */}
+          <motion.div
+            className="col-span-full sm:col-span-1 bg-black rounded-xl overflow-hidden shadow-lg"
+            variants={rotateIn}
+            whileHover={{ scale: 1.05 }}
+          >
+            <img
+              alt="Gengar"
+              className="w-full h-full object-cover"
+              height="300"
+              src={gengarFly}
+              style={{
+                aspectRatio: "1/1",
+                objectFit: "cover",
+              }}
+              width="300"
+            />
+          </motion.div>
+
+          {/* Vision section */}
+          <motion.div
+            className="col-span-full sm:col-span-2 bg-black rounded-xl shadow-lg p-6"
+            variants={fadeInLeft}
+            whileHover={{ scale: 1.05 }}
+          >
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green mb-4">Vision</h3>
+            <p className="text-peach text-base md:text-lg lg:text-xl leading-relaxed">
+              To become a leading full-stack developer known for creating innovative, user-centric applications that
+              make a positive impact on people's lives and businesses.
+            </p>
+          </motion.div>
+
+          {/* Soft Skills */}
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4 col-span-2"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            {[
+              "Problem Solving",
+              "Adaptability",
+              "Effective Communication",
+              "Teamwork",
+              "Empathy",
+              "Emotional Intelligence",
+            ].map((skill, index) => (
+              <motion.div
+                key={skill}
+                className={`${
+                  index % 2 === 0
+                    ? "bg-peach text-green"
+                    : "bg-black text-peach"
+                } rounded-xl shadow-lg p-4`}
+                variants={index % 2 === 0 ? fadeInUp : fadeInRight}
+                whileHover={{ scale: 1.05 }}
+              >
+                <h3 className="text-lg font-bold">{skill}</h3>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </motion.div>
+    </Section>
+  )
+}
