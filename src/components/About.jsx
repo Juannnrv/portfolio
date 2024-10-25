@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import { Download } from "lucide-react"
+import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 import aboutMeVideo from "../assets/aboutMe.mp4";
 import gengarFly from "../assets/gengar.gif";
 import gengarLaugh from "../assets/gengarLaughing.gif";
@@ -13,31 +13,31 @@ const staggerContainer = {
       staggerChildren: 0.5,
     },
   },
-}
+};
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-}
+};
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -50 },
   show: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-}
+};
 
 const fadeInRight = {
   hidden: { opacity: 0, x: 50 },
   show: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-}
+};
 
 const rotateIn = {
   hidden: { opacity: 0, rotate: -10 },
   show: { opacity: 1, rotate: 0, transition: { duration: 0.5 } },
-}
+};
 
 export default function Component() {
   return (
-    <Section className="min-h-screen bg-green p-4 md:p-8">
+    <Section className="min-h-screen bg-green p-4 md:p-8 overflow-hidden">
       <motion.div
         className="max-w-7xl mx-auto"
         variants={staggerContainer}
@@ -68,10 +68,13 @@ export default function Component() {
             variants={rotateIn}
             whileHover={{ scale: 1.05 }}
           >
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green mb-4">Mission</h3>
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green mb-4">
+              Mission
+            </h3>
             <p className="text-peach text-base md:text-lg lg:text-xl leading-relaxed">
-              To leverage technology, empathy, and innovation to create effective solutions that benefit our communities
-              and push the boundaries of what's possible in web development.
+              To leverage technology, empathy, and innovation to create
+              effective solutions that benefit our communities and push the
+              boundaries of what's possible in web development.
             </p>
           </motion.div>
 
@@ -81,7 +84,9 @@ export default function Component() {
             variants={fadeInRight}
             whileHover={{ scale: 1.05 }}
           >
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">ENGLISH LEVEL</h3>
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+              ENGLISH LEVEL
+            </h3>
             <p className="text-5xl md:text-7xl lg:text-9xl font-bold">B2</p>
           </motion.div>
 
@@ -91,7 +96,11 @@ export default function Component() {
             variants={rotateIn}
             whileHover={{ scale: 1.05 }}
           >
-            <img src={gengarLaugh} alt="Gengar laughing" className="w-[150px] h-[150px] rounded-full mb-4" />
+            <img
+              src={gengarLaugh}
+              alt="Gengar laughing"
+              className="w-[125px] h-[150px] rounded-full mb-4"
+            />
             <div className="bg-peach rounded-xl w-full">
               <a
                 href="/path/to/your/cv.pdf"
@@ -110,10 +119,14 @@ export default function Component() {
             variants={fadeInUp}
             whileHover={{ scale: 1.05 }}
           >
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green mb-4">About Me</h3>
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green mb-4">
+              About Me
+            </h3>
             <p className="text-black font-medium text-base md:text-xl lg:text-2xl leading-relaxed">
-              I'm Juan Rosas, a junior full-stack developer at Campuslands, passionate about creating scalable APIs and
-              intuitive interfaces. I thrive on solving complex challenges and making a tangible impact on users.
+              I'm Juan Rosas, a junior full-stack developer at Campuslands,
+              passionate about creating scalable APIs and intuitive interfaces.
+              I thrive on solving complex challenges and making a tangible
+              impact on users.
             </p>
           </motion.div>
 
@@ -142,10 +155,13 @@ export default function Component() {
             variants={fadeInLeft}
             whileHover={{ scale: 1.05 }}
           >
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green mb-4">Vision</h3>
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green mb-4">
+              Vision
+            </h3>
             <p className="text-peach text-base md:text-lg lg:text-xl leading-relaxed">
-              To become a leading full-stack developer known for creating innovative, user-centric applications that
-              make a positive impact on people's lives and businesses.
+              To become a leading full-stack developer known for creating
+              innovative, user-centric applications that make a positive impact
+              on people's lives and businesses.
             </p>
           </motion.div>
 
@@ -182,5 +198,5 @@ export default function Component() {
         </div>
       </motion.div>
     </Section>
-  )
+  );
 }
