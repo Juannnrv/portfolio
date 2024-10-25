@@ -17,10 +17,10 @@ const Header = () => {
 
   return (
     <Section className="bg-dark">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-4 md:px-10 max-w-full">
         <div className="flex flex-col items-center justify-center gap-5 mt-10">
           <motion.h1
-            className="text-3xl md:text-8xl font-bold text-peach mr-10"
+            className="text-3xl sm:text-4xl md:text-6xl ml-9 lg:text-8xl font-bold text-peach mr-10"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -29,7 +29,7 @@ const Header = () => {
           </motion.h1>
 
           <motion.h1
-            className="text-3xl md:text-8xl font-bold bg-gradient-to-r from-[#23714D] via-[#1C7C5C] to-[#73C996] bg-clip-text text-transparent wave-text"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-r from-[#23714D] via-[#1C7C5C] to-[#73C996] bg-clip-text text-transparent wave-text"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -38,7 +38,7 @@ const Header = () => {
           </motion.h1>
 
           <motion.p
-            className="text-xl text-peach text-center md:max-w-md mt-10"
+            className="text-base sm:text-lg md:text-xl text-peach text-center md:max-w-md mt-10"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -50,17 +50,17 @@ const Header = () => {
           </motion.p>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-20">
+        <div className="flex flex-col items-center justify-between gap-10 md:gap-20">
           <motion.img
             src={Juan}
             alt="Juan"
-            className="rounded-2xl w-32 h-32 md:w-full md:h-[650px] object-cover mt-10 hover:scale-105 transition-transform duration-300"
+            className="rounded-2xl w-72 h-72 sm:w-48 sm:h-48 md:w-full md:h-[650px] object-cover my-8 hover:scale-105 transition-transform duration-300"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
           />
           <motion.h1
-            className="text-6xl font-bold text-peach mr-72 hover:text-green-500"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-peach mr-48 md:mr-72 hover:text-green-500"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -74,23 +74,28 @@ const Header = () => {
 
         <div className="flex flex-col items-center justify-center gap-5">
           <motion.h1
-            className="text-3xl md:text-8xl font-bold text-peach mr-20"
+            className="text-3xl sm:text-4xl md:text-6xl ml-20 lg:text-8xl font-bold text-peach mr-20"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.4 }}
           >
-            A <span className="text-green bg-gradient-to-r from-[#23714D] via-[#1C7C5C] to-[#73C996] bg-clip-text text-transparent wave-text">Junior</span>
+            A{" "}
+            <span className="text-green bg-gradient-to-r from-[#23714D] via-[#1C7C5C] to-[#73C996] bg-clip-text text-transparent wave-text">
+              Junior
+            </span>
           </motion.h1>
           <motion.h1
-            className="text-3xl md:text-8xl font-bold text-peach mr-5"
+            className="text-3xl sm:text-4xl md:text-6xl ml-5 lg:text-8xl font-bold text-peach mr-5"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.6 }}
           >
-            <span className="text-green bg-gradient-to-r from-[#23714D] via-[#1C7C5C] to-[#73C996] bg-clip-text text-transparent wave-text">Full-Stack</span>
+            <span className="text-green bg-gradient-to-r from-[#23714D] via-[#1C7C5C] to-[#73C996] bg-clip-text text-transparent wave-text">
+              Full-Stack
+            </span>
           </motion.h1>
           <motion.h1
-            className="text-3xl md:text-8xl font-bold text-peach"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-peach"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.8 }}
