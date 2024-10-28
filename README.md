@@ -1,8 +1,36 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfolio Juannnrv
 
-Currently, two official plugins are available:
+![desktop](./src/assets/previewDesk.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+![mobile](./src/assets/previewMobile.png)
+
+
+
+## Instalación y Ejecución
+
+Para ver el proyecto en tu máquina local:
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/Juannnrv/portfolio
+   
+   cd portfolio
+
+2. Instala las dependencias:
+   ```bash
+   npm i 
+   
+3. Inicia el servidor de desarrollo:
+
+    ```bash
+    npm run dev
+
+4. Abre tu navegador y ve a http://localhost:3000 para visualizar el portfolio.
+
+## Contacto
+Si deseas ponerte en contacto, puedes encontrarme en [Linkedin](https://www.linkedin.com/in/juan-rosas-4580192b8/) o [Email](juandavid15122016@gmail.com) . Abre tu navegador y ve a `http://localhost:3000` para visualizar el portfolio.
+
