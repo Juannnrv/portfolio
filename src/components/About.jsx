@@ -84,10 +84,12 @@ export default function Component() {
             variants={fadeInRight}
             whileHover={{ scale: 1.05 }}
           >
+            <a href="https://drive.google.com/file/d/1W-YUzFxMQaGL33f9SYY27QoNl0cI2xwz/view" target="blank">
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
               ENGLISH LEVEL
             </h3>
             <p className="text-5xl md:text-7xl lg:text-9xl font-bold">B2</p>
+            </a>
           </motion.div>
 
           {/* Download CV button */}
@@ -103,8 +105,7 @@ export default function Component() {
             />
             <div className="bg-peach rounded-xl w-full">
               <a
-                href="/path/to/your/cv.pdf"
-                download
+                href="https://drive.google.com/file/d/1HUY-Ft0ml9kdXNPTYCOOhHotx87lfea5/view" target="blank"
                 className="w-full h-full text-lg flex items-center justify-center space-x-2 text-green p-4"
               >
                 <Download className="mr-2 h-6 w-6" />
