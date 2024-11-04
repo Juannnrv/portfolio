@@ -82,7 +82,8 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 2 }}
           >
             <motion.a
-              href="mailto:youremail@example.com"
+              href="mailto:juandavid15122016@gmail.com"
+              target="_blank"
               className="text-peach hover:text-green transition-colors duration-300"
               whileHover={{ scale: 1.2, rotate: 10 }}
               whileTap={{ scale: 0.9 }}
@@ -90,7 +91,8 @@ const Header = () => {
               <FaEnvelope size={30} />
             </motion.a>
             <motion.a
-              href="https://github.com/yourusername"
+              href="https://github.com/Juannnrv"
+              target="_blank"
               className="text-peach hover:text-green transition-colors duration-300"
               whileHover={{ scale: 1.2, rotate: 10 }}
               whileTap={{ scale: 0.9 }}
@@ -98,7 +100,8 @@ const Header = () => {
               <FaGithub size={30} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/juan-rosas-4580192b8/"
+              target="_blank"
               className="text-peach hover:text-green transition-colors duration-300"
               whileHover={{ scale: 1.2, rotate: 10 }}
               whileTap={{ scale: 0.9 }}

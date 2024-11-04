@@ -30,6 +30,7 @@ const App = () => {
           <Header />
           <About />
           <Skills />
+          <Projects />
         </>
       )}
     </div>
