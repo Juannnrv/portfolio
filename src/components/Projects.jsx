@@ -11,7 +11,7 @@ import ecommerce from "../assets/ecommerce.png";
 import eWallet from "../assets/eWallet.png";
 import food from "../assets/food.png";
 import translator from "../assets/translator.png";
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiMysql, SiNodedotjs, SiExpress, SiTailwindcss, SiPython, SiMongodb, SiVuedotjs } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiMysql, SiNodedotjs, SiExpress, SiTailwindcss, SiPython, SiMongodb, SiVuedotjs, SiTypescript } from "react-icons/si";
 
 const projectsData = [
   {
@@ -84,8 +84,17 @@ const projectsData = [
     description: "Web application designed for fast, seamless text translation across multiple languages. It features an intuitive user interface, supports a range of popular languages, and allows users to quickly swap between source and target languages for a smooth, user-friendly experience.",
     category: "Web",
     image: translator,
-    technologies: [SiVuedotjs, SiTailwindcss],
+    technologies: [SiVuedotjs, SiTailwindcss, SiTypescript],
     github: "https://github.com/Juannnrv/depplTranslator",
+  },
+  {
+    id: 9,
+    title: "Brave Food",
+    description: "Fully responsive landing pages for a fast-food business using pure HTML and CSS. This project focused on delivering a seamless user experience across devices, highlighting attention to detail in design and responsiveness.",
+    category: "Web",
+    image: food,
+    technologies: [SiHtml5, SiCss3],
+    github: "https://github.com/Juannnrv/braveFood",
   },
 ];
 

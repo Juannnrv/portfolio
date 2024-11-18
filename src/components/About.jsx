@@ -128,11 +128,11 @@ export default function Component() {
               About Me
             </h3>
             <p className="text-black font-medium text-base md:text-xl lg:text-2xl leading-relaxed">
-              I'm Juan Rosas, a junior full-stack developer passionate about
-              crafting intuitive user experiences and scalable solutions. I
-              combine creativity with collaboration to ensure projects meet
-              technical requirements while resonating with users. I thrive in
-              diverse settings and continuously seek to learn new technologies.
+              I'm Juan Rosas, a passionate junior full-stack developer dedicated
+              to crafting intuitive user interfaces and building scalable APIs.
+              With a background in database and server management, I bring
+              creativity and collaboration to every project, ensuring technical
+              excellence while delivering solutions that resonate with users.
             </p>
           </motion.div>
 

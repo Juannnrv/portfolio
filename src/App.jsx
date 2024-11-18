@@ -3,6 +3,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Header from "./components/Header";
+import Timeline from "./components/Timeline";
 import "./index.css";
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoaded(true);
-    }, 2500); // Duración de la animación
+    }, 2500); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -31,6 +32,7 @@ const App = () => {
           <About />
           <Skills />
           <Projects />
+          <Timeline />
         </>
       )}
     </div>
