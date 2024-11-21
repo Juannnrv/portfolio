@@ -72,7 +72,7 @@ const Header = () => {
             <img
               src={Juan}
               alt="Juan"
-              className="rounded-2xl w-72 h-72 sm:w-48 sm:h-48 md:w-full md:h-[650px] object-cover my-8 hover:scale-105 transition-transform duration-300"
+              className="rounded-2xl w-72 h-72 md:w-full md:h-[565px] object-cover my-8 hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
           <motion.div
@@ -82,7 +82,7 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 2 }}
           >
             <motion.a
-              href="mailto:juandavid15122016@gmail.com"
+              href="mailto:rosas.juannn@gmail.com"
               target="_blank"
               className="text-peach hover:text-green transition-colors duration-300"
               whileHover={{ scale: 1.2, rotate: 10 }}
@@ -113,7 +113,7 @@ const Header = () => {
 
         <div className="flex flex-col items-center justify-center gap-5">
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-6xl ml-10 lg:text-8xl font-bold text-peach mr-20"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-peach mr-20"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.4 }}

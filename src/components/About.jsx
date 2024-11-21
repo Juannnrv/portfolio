@@ -108,7 +108,7 @@ export default function Component() {
             />
             <div className="bg-peach rounded-xl w-full">
               <a
-                href="https://drive.google.com/file/d/1W-YUzFxMQaGL33f9SYY27QoNl0cI2xwz/view"
+                href="https://drive.google.com/file/d/1HDb9k5fNV4sqLekQDbC4M6bn82bl76vC/view?usp=sharing"
                 target="blank"
                 className="w-full h-full text-lg flex items-center justify-center space-x-2 text-green p-4"
               >
