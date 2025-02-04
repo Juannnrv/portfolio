@@ -20,6 +20,7 @@ import {
   SiBootstrap,
   SiPostman,
 } from "react-icons/si";
+import { FaSalesforce, FaJava } from "react-icons/fa6";
 import Section from "./Section";
 
 const skills = [
@@ -41,6 +42,8 @@ const skills = [
   { name: "Tailwind", icon: SiTailwindcss },
   { name: "Bootstrap", icon: SiBootstrap },
   { name: "Postman", icon: SiPostman },
+  { name: "Salesforce", icon: FaSalesforce },
+  { name: "Java", icon: FaJava},
 ];
 
 const HardSkills = () => {
