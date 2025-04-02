@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLink } from "react-icons/fa";
+// import { FaLink } from "react-icons/fa";
 import campus from "../assets/campus.jpg";
 import smart from "../assets/smart.png";
 import cambridge from "../assets/cambdrige.jpg";
@@ -10,9 +10,9 @@ import salesforce from "../assets/salesforce.jpeg"
 const timelineData = [
   {
     title: "Salesforce Administrator (CRT101)",
-    institution: "Salesforce",
-    date: "In Progress",
-    description: "Currently studying for the Salesforce Administrator certification (CRT101), focusing on user management, data security, automation, and configuration of Salesforce environments.",
+    institution: "Campuslands",
+    date: "March 25, 2025",
+    description: "Proficient in Salesforce Administrator certification (CRT101), focusing on user management, data security, process automation, and Salesforce environment configuration to optimize business operations.",
     img: salesforce
   },
   {

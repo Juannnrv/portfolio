@@ -4,6 +4,7 @@ import aboutMeVideo from "../assets/aboutMe.mp4";
 import gengarFly from "../assets/gengar.gif";
 import gengarLaugh from "../assets/gengarLaughing.gif";
 import Section from "./Section";
+import CV from "../assets/Juan_David_Rosas_Vera_CVI.pdf"
 
 const staggerContainer = {
   hidden: { opacity: 1 },
@@ -87,7 +88,7 @@ export default function Component() {
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
                 ENGLISH LEVEL
               </h3>
-              <p className="text-5xl md:text-7xl lg:text-9xl font-bold">B2</p>
+              <p className="text-5xl md:text-7xl lg:text-9xl font-bold">C1</p>
           </motion.div>
 
           {/* Download CV button */}
@@ -103,8 +104,8 @@ export default function Component() {
             />
             <div className="bg-peach rounded-xl w-full">
               <a
-                href="https://drive.google.com/file/d/1j76qbgD-KFEbLaLUJjM41yeoBdZjPWM9/view?usp=sharing"
-                target="blank"
+                href={CV}
+                download="Juan_David_Rosas_Vera_CV.pdf"
                 className="w-full h-full text-lg flex items-center justify-center space-x-2 text-green p-4"
               >
                 <Download className="mr-2 h-6 w-6" />
