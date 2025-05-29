@@ -11,7 +11,8 @@ import ecommerce from "../assets/ecommerce.png";
 import eWallet from "../assets/eWallet.png";
 import food from "../assets/food.png";
 import translator from "../assets/translator.png";
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiMysql, SiNodedotjs, SiExpress, SiTailwindcss, SiPython, SiMongodb, SiVuedotjs, SiTypescript } from "react-icons/si";
+import construfurgo from "../assets/Construfurgos_s.a.s.webp";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiMysql, SiNodedotjs, SiExpress, SiTailwindcss, SiPython, SiMongodb, SiVuedotjs, SiTypescript, SiSalesforce } from "react-icons/si";
 
 const projectsData = [
   {
@@ -35,12 +36,11 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Campus Stock",
-    description: "Intuitive interface for managing inventory at the Bucaramanga headquarters. It enables detailed tracking of assets, including assignment to employees, relocation, decommissioning due to damage, and maintenance management. The system also manages information about staff and different zones within the campus, ensuring efficient resource administration.",
-    category: "Backend",
-    image: campus,
-    technologies: [SiPython],
-    github: "https://github.com/Juannnrv/inventarioCampuslands",
+    title: "ConstruFurgos S.A.S",
+    description: "Salesforce management and configuration, process automation with Flow Builder, reporting and dashboard creation, and development of Lightning applications to optimise sales, support and purchasing", category: "CRM",
+    image: construfurgo,
+    technologies: [SiSalesforce],
+    github: "https://github.com/Juannnrv/Proyecto_Salesforce_JuanRosas"
   },
   {
     id: 4,
@@ -96,9 +96,18 @@ const projectsData = [
     technologies: [SiHtml5, SiCss3],
     github: "https://github.com/Juannnrv/braveFood",
   },
+  {
+    id: 10,
+    title: "Campus Stock",
+    description: "Intuitive interface for managing inventory at the Bucaramanga headquarters. It enables detailed tracking of assets, including assignment to employees, relocation, decommissioning due to damage, and maintenance management. The system also manages information about staff and different zones within the campus, ensuring efficient resource administration.",
+    category: "Backend",
+    image: campus,
+    technologies: [SiPython],
+    github: "https://github.com/Juannnrv/inventarioCampuslands",
+  },
 ];
 
-const categories = ["All", "Web", "Mobile", "Backend"];
+const categories = ["All", "Web", "Mobile", "Backend", "CRM"];
 const projectsPerPage = 6; 
 
 export default function Projects() {
@@ -167,18 +176,18 @@ export default function Projects() {
                 alt={project.title}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-4 flex justify-between">
+              <div className="p-4 flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl font-semibold text-peach mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-white">{project.category}</p>
+                  <p className="text-white mb-4">{project.category}</p>
                 </div>
-                <div className="flex space-x-2">
+                <div className="flex flex-wrap gap-4">
                   {project.technologies?.map((Icon, index) => (
                     <div
                       key={index}
-                      className="bg-green h-12 mt-5 rounded-full p-3 flex items-center justify-center"
+                      className="bg-green h-12 w-12 rounded-full p-3 flex items-center justify-center"
                     >
                       <Icon className="text-peach" size={25} />
                     </div>

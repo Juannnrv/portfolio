@@ -59,7 +59,7 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             Open to{" "}
-            <span className="text-green mt-2 md:mt-5">
+            <span className="text-green mt-2 md:mt-20">
               <DynamicText />
             </span>
           </motion.h1>
@@ -113,7 +113,7 @@ const Header = () => {
 
         <div className="flex flex-col items-center justify-center gap-5">
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-peach mr-20"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-peach"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.4 }}
@@ -124,13 +124,13 @@ const Header = () => {
             </span>
           </motion.h1>
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-peach"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-peach whitespace-nowrap"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.6 }}
           >
             <span className="text-green bg-gradient-to-r from-[#23714D] via-[#1C7C5C] to-[#73C996] bg-clip-text text-transparent wave-text">
-              Full-Stack
+              Full-stack
             </span>
           </motion.h1>
           <motion.h1

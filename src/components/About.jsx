@@ -124,11 +124,7 @@ export default function Component() {
               About Me
             </h3>
             <p className="text-black font-medium text-base md:text-xl lg:text-2xl leading-relaxed">
-              I'm Juan Rosas, a passionate junior full-stack developer dedicated
-              to crafting intuitive user interfaces and building scalable APIs.
-              With a background in database and server management, I bring
-              creativity and collaboration to every project, ensuring technical
-              excellence while delivering solutions that resonate with users.
+            I'm Juan Rosas, a junior full-stack developer passionate about building intuitive user interfaces, designing scalable systems, and ensuring data consistency across platforms. I have experience working with APIs, cloud-based environments, and database-driven applications. I enjoy automating processes, improving team workflows, and contributing to collaborative, agile projects that focus on real user impact.
             </p>
           </motion.div>
 

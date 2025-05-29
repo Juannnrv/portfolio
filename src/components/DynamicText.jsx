@@ -22,7 +22,7 @@ const DynamicText = () => {
   };
 
   return (
-    <span className="relative inline-block h-12">
+    <span className="ml-2 h-8">
       <AnimatePresence>
         <motion.span
           key={currentWord}

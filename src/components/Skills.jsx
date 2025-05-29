@@ -20,7 +20,7 @@ import {
   SiBootstrap,
   SiPostman,
 } from "react-icons/si";
-import { FaSalesforce, FaJava } from "react-icons/fa6";
+import { FaSalesforce, FaJava, FaAws } from "react-icons/fa6";
 import Section from "./Section";
 
 const skills = [
@@ -44,6 +44,7 @@ const skills = [
   { name: "Postman", icon: SiPostman },
   { name: "Salesforce", icon: FaSalesforce },
   { name: "Java", icon: FaJava},
+  { name: "AWS", icon: FaAws}
 ];
 
 const HardSkills = () => {
@@ -70,7 +71,7 @@ const HardSkills = () => {
   const isInView = useInView(ref, { once: true, amount: 0.5 });
 
   return (
-    <Section className="min-h-screen bg-dark flex items-center justify-center pt-72 pb-80">
+    <Section className="min-h-screen bg-dark flex items-center justify-center pt-96 pb-96">
       <div
         ref={ref}
         className="relative w-full max-w-6xl h-[600px] md:h-[800px] flex flex-col items-center justify-center"
